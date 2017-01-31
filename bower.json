@@ -1,0 +1,17 @@
+{
+  "name": "realtime-voting",
+  "homepage": "https://github.com/lukewalt/realtime-voting",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "firebase": "^3.6.7"
+  }
+}

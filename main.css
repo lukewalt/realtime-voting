@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    padding: 0 3%;
+}
+
+
+
+.choice {
+    width: 45%;
+    float: left;
+}
+
+.choice img {
+    max-width: 90%;
+    display: block;
+}
