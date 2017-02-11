@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>RealTime Voting</title>
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-
-        <h1>Vote Now</h1>
-        <div class="choice choice_a" data-value="patriots">
-            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLd6UbYG2OMeWN-8-NFbRms2FLMpz00dONdrdjPz-weNvGqY1m" alt="">
-            <button>Vote</button>
-            <h3 class="hidden"></h3>
-        </div>
-        <div class="choice choice_b" data-value="falcons">
-            <img src="http://i.imgur.com/NhNZ391.gif" alt="">
-            <button>Vote</button>
-            <h3 class="hidden"></h3>
-        </div>
-
-
-    <script type="text/javascript" src="bower_components/firebase/firebase.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-    </body>
+  <head>
+    <title>Vote Now</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Vote Now</h1>
+    <div class="choice" data-value="falcons">
+      <h2>Falcons</h2>
+      <img src="http://i.imgur.com/TIflhoa.jpg" />
+      <button >Vote</button>
+      <h3 class="vote_totals hidden"></h3>
+    </div>
+    <div class="choice" data-value="patriots">
+      <h2>Patriots</h2>
+      <img src="http://i.imgur.com/n55z06J.jpg" />
+      <button>Vote</button>
+      <h3 class="vote_totals hidden"></h3>
+    </div>
+    <div class="clear"></div>
+    <div class="chat">
+      <h1>Trash Talk</h1>
+      <form>
+        <input type="text" placeholder="name" name="name" required />
+        <input type="text" placeholder="message" name="content" required />
+        <input type="submit">
+      </form>
+      <div class="messages"></div>
+    </div>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
